@@ -2,40 +2,16 @@ import java.util.Scanner;
 
 public class Wall {
 
-    private double length; // Wall length.
-    private double height; // Wall height.
     private double surfaceArea; // Surface area.
     private String paintColour; // Colour of paint for this wall.
     private int paintVolume; // Litres of paint required. (Rounding up to ensure coverage.)
 
     // Constructor
     public Wall(double length, double height){
-        this.length = length;
-        this.height = height;
         this.surfaceArea = length * height;
     }
 
-    // Getters and setters.
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public double getLength() {
-        return length;
-    }
-
-    public void setLength(double length) {
-        this.length = length;
-    }
-
-    public double getSurfaceArea() {
-        return surfaceArea;
-    }
-
+    // Getters.
     public String getPaintColour() {
         return paintColour;
     }
